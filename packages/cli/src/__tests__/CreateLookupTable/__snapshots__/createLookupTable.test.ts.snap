@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createLookupTable creates lookup table CSV creates AWS lookup table CSV file, with default output file path 1`] = `
+"serviceName,region,usageType,usageUnit,vCpus,machineType,kilowattHours,co2e
+AmazonEC2,us-east-1,USE1-EBSOptimized:m4.xlarge,Hrs,4,,0.01881076378906703,0.000007820669099123564
+AmazonEC2,ap-south-1,APS3-EUW3-AWS-Out-Bytes,GB,,,0.001135,8.035799999999999e-7
+AmazonS3,ap-southeast-2,APS2-TimedStorage-ByteHrs,GB-Mo,,,2.0129391486989334e-15,1.5902219274721573e-18
+AmazonRDS,eu-west-2,EUW2-RDS:GP2-Storage,GB-Mo,,,0.00099436896,2.2671612288000005e-7
+AmazonRDS,us-east-1,Aurora:StorageIOUsage,IOs,,,0.005235033187267262,0.0000021764912227723005
+"
+`;
+
+exports[`createLookupTable creates lookup table CSV creates AWS lookup table CSV file, with provided output file name 1`] = `
+"serviceName,region,usageType,usageUnit,vCpus,machineType,kilowattHours,co2e
+AmazonEC2,us-east-1,USE1-EBSOptimized:m4.xlarge,Hrs,4,,0.01881076378906703,0.000007820669099123564
+AmazonEC2,ap-south-1,APS3-EUW3-AWS-Out-Bytes,GB,,,0.001135,8.035799999999999e-7
+AmazonS3,ap-southeast-2,APS2-TimedStorage-ByteHrs,GB-Mo,,,2.0129391486989334e-15,1.5902219274721573e-18
+AmazonRDS,eu-west-2,EUW2-RDS:GP2-Storage,GB-Mo,,,0.00099436896,2.2671612288000005e-7
+AmazonRDS,us-east-1,Aurora:StorageIOUsage,IOs,,,0.005235033187267262,0.0000021764912227723005
+"
+`;
+
+exports[`createLookupTable creates lookup table CSV creates Azure lookup table CSV file, with default output file path 1`] = `
+"serviceName,region,usageType,usageUnit,vCpus,machineType,kilowattHours,co2e
+Virtual Machines,uksouth,D2 v2/DS2 v2,10 Hours,,,0.015255069630697749,0.0000034781558757990868
+Virtual Machines,westeurope,D4as v4 Spot,1 Hour,,,0.01122905020123717,0.000004379329578482496
+Azure App Service,CentralUS,F1,1 Hour,,,0.009100215473961493,0.000004297394753268836
+Container Instances,SouthCentralUS,vCPU Duration,1000 Hours,,,0.0025359,0.0000010049594187
+Azure Database for MySQL,Unknown,2 vCore,100 Hours,,,0.015215399999999999,0.000006198753959999999
+VPN Gateway,Unknown,VpnGw1,100 Hours,,,0.015215399999999999,0.000006198753959999999
+"
+`;
+
+exports[`createLookupTable creates lookup table CSV creates Azure lookup table CSV file, with provided output file name 1`] = `
+"serviceName,region,usageType,usageUnit,vCpus,machineType,kilowattHours,co2e
+Virtual Machines,uksouth,D2 v2/DS2 v2,10 Hours,,,0.015255069630697749,0.0000034781558757990868
+Virtual Machines,westeurope,D4as v4 Spot,1 Hour,,,0.01122905020123717,0.000004379329578482496
+Azure App Service,CentralUS,F1,1 Hour,,,0.009100215473961493,0.000004297394753268836
+Container Instances,SouthCentralUS,vCPU Duration,1000 Hours,,,0.0025359,0.0000010049594187
+Azure Database for MySQL,Unknown,2 vCore,100 Hours,,,0.015215399999999999,0.000006198753959999999
+VPN Gateway,Unknown,VpnGw1,100 Hours,,,0.015215399999999999,0.000006198753959999999
+"
+`;
+
+exports[`createLookupTable creates lookup table CSV creates GCP lookup table CSV file, with default output file path 1`] = `
+"serviceName,region,usageType,usageUnit,vCpus,machineType,kilowattHours,co2e
+Compute Engine,us-east4,N1 Predefined Instance Core running in Virginia,seconds,,n1-standard-4,0.000001260575649257259,4.550678093818705e-10
+Compute Engine,europe-west1,Storage PD Capacity,byte-seconds,,,1.7735146684572102e-19,3.7598510971292856e-23
+Compute Engine,europe-west1,Network Internet Egress from EMEA to Americas,bytes,,,1.0058283805847168e-12,2.1323561668395997e-16
+Compute Engine,us-central1,SSD backed PD Capacity,byte-seconds,,,3.3651303965598345e-19,1.5277692000381648e-22
+App Engine,us-east4,Backend Instances,seconds,,,8.769444444444446e-7,3.165769444444445e-10
+Compute Engine,us-east4,Network Inter Region Ingress from Netherlands to Americas,bytes,,,1.0058283805847168e-12,3.6310404539108276e-16
+"
+`;
+
+exports[`createLookupTable creates lookup table CSV creates GCP lookup table CSV file, with provided output file name 1`] = `
+"serviceName,region,usageType,usageUnit,vCpus,machineType,kilowattHours,co2e
+Compute Engine,us-east4,N1 Predefined Instance Core running in Virginia,seconds,,n1-standard-4,0.000001260575649257259,4.550678093818705e-10
+Compute Engine,europe-west1,Storage PD Capacity,byte-seconds,,,1.7735146684572102e-19,3.7598510971292856e-23
+Compute Engine,europe-west1,Network Internet Egress from EMEA to Americas,bytes,,,1.0058283805847168e-12,2.1323561668395997e-16
+Compute Engine,us-central1,SSD backed PD Capacity,byte-seconds,,,3.3651303965598345e-19,1.5277692000381648e-22
+App Engine,us-east4,Backend Instances,seconds,,,8.769444444444446e-7,3.165769444444445e-10
+Compute Engine,us-east4,Network Inter Region Ingress from Netherlands to Americas,bytes,,,1.0058283805847168e-12,3.6310404539108276e-16
+"
+`;
